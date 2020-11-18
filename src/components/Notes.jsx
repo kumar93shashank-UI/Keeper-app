@@ -1,4 +1,6 @@
 import React from "react";
+import DeleteIcon from '@material-ui/icons/DeleteForever';
+import Fab from '@material-ui/core/Fab';
 import "./styles.css"
 
 function Notes(props){
@@ -10,7 +12,7 @@ function Notes(props){
     <div className="note">
       <h1>{title}</h1>
       <p>{content}</p>
-      <button onClick={DeleteNote}>DELETE</button>
+      <Fab onClick={DeleteNote}><DeleteIcon/></Fab>
     </div>
   )
 }
